@@ -1,0 +1,8 @@
+on: [push]
+
+jobs:
+  run-windows-script:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: .\windows\install-packages.ps1
